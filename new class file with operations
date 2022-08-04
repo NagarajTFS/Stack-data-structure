@@ -1,0 +1,29 @@
+public class Stack {
+	char arr[]=new char[10];
+	int index;
+	
+	Stack() {
+		index=-1;
+	}
+	void push(char item){
+		if(index<=9) {
+		arr[++index]=item;
+		}
+		else {
+			System.out.println("STACK IS FULL");
+		}
+	}
+	
+	 int pop(){
+		if(index>=0) {
+		return arr[index--];
+		}
+		else {
+			System.out.println("NO VALUE IN STACK");
+			return -1;
+		}
+		
+	}
+	
+
+}
